@@ -67,6 +67,8 @@ class MethodsUrbanRoutesPage:
 #Seleccionar tarifa Comfort
     def comfort_rate(self):
         self.driver.find_element(*locators.UrbanRoutesPage.comfort_rate).click()
+    def comfort_image(self):
+        return self.driver.find_element(*locators.UrbanRoutesPage.comfort_image).is_enabled()
 
 
 #espera a agregar numero

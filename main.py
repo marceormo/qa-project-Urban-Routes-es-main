@@ -4,7 +4,7 @@ import data
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
-import locators
+
 
 
 from locators import UrbanRoutesPage
@@ -54,7 +54,7 @@ class TestUrbanRoutes:
 #Seleccionar tarifa Comfort
     def test_comfort_rate(self):
         self.routes_page.comfort_rate()
-        assert self.routes_page.driver.find_element(*locators.UrbanRoutesPage.comfort_image).is_displayed()
+        assert self.routes_page.comfort_image()
 
 #Rellenar "Numero de telefono"
     def test_phone_number_button(self):
@@ -109,5 +109,5 @@ class TestUrbanRoutes:
 
     @classmethod
     def teardown_class(cls):
-        sleep(10)
+        sleep(20)
         cls.driver.quit()

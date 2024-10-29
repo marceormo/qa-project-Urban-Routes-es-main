@@ -45,9 +45,21 @@ Los archivos del proyecto son:
 4. Correr las pruebas y revisar que pasen correctamente en Google Chrome.
 5. Revisar los resultados de las pruebas.
 
-## Cómo Ejecutar las Pruebas
+# Cómo Ejecutar las Pruebas
 
-Después de tener todas las pruebas listas en PyCharm y tener instalado el paquete de pytest, sigue estos pasos:
+Para ejecutar las pruebas en tu proyecto, sigue estos pasos:
 
-1. Haz clic en la parte superior y elige la opción “Current File”.
-2. Luego, haz clic en el icono “Run”.
+1. Asegúrate de tener instalados los paquetes **Pytest** y **Selenium**.
+2. Abre el archivo del proyecto: `qa-project-Urban-Rotes-es-main`.
+3. Abre el archivo `main.py` en PyCharm.
+4. En la parte superior de la ventana, selecciona la opción **"Current File"**.
+5. Haz clic en el ícono **"Run"** para ejecutar las pruebas.
+
+¡Listo! Ahora podrás ver los resultados de las pruebas.
+
+## Comando para Ejecutar el Proyecto
+
+Puedes ejecutar el proyecto desde la terminal con el siguiente comando:
+
+```bash
+cd ~/Downloads/qa-project-Urban-Routes-es-main
